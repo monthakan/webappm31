@@ -1,0 +1,83 @@
+body {
+    font-family: 'Russo One', sans-serif;
+    color: aliceblue;
+    background-image: url(/static/img/jingback.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.home{
+    color: white;
+    margin-top: 50px;
+}
+.button{
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    border-color: none;
+    border-width: 0;
+    border-style: solid;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: chocolate;
+    color: white;
+    font-size: 15px;
+}
+header{
+    display: flexbox;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+li, a ,button{
+    font-family: 'Russo One', sans-serif;
+    text-decoration: none;
+    font-weight: 500px;
+    font-size: 12px;
+}
+.nav {
+    list-style: none;
+    
+}
+.nav li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav li a {
+    transition: all 0.3s ease 0 s;
+    color: white
+}
+.nav li a:hover{
+    color:cadetblue;
+}
+.navnav{
+    padding: 9px 25px;
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0 s;
+    display: inline-block;
+}
+button:hover{
+    background-color:cadetblue;
+    color: white;
+}
+.eq .Radial .photo {
+    display: inline-block;
+    object-position: top;
+    object-fit: cover;
+    flex-basis: auto;
+    vertical-align: top;
+}
+.plot{
+    background-image: url(/static/img/jingback.jpg);
+    color: white;
+}

@@ -1,0 +1,36 @@
+body{
+    font-family: 'Russo One', sans-serif;
+    color: aliceblue;
+    background-image: url(/static/img/jingback.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.btnhome{
+    display: inline-block;
+    background-color: azure;
+    margin-left: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    ;
+}
+.home{
+    display: flexbox;
+    margin-bottom:none;
+    margin-top: none;
+    padding: 10;
+    font-size: 14px;
+}
+.homepage{
+    margin-top: 20%;
+    margin-left: 100px;
+}
+a{
+    color: black;
+}
+a:hover{
+    color:cornflowerblue;
+}

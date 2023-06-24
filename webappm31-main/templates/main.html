@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" This website was developed to apply a 
+    model from machine learning to the m31 cluster Predict.">
+    <title>Prediction M31</title>
+    <link rel="stylesheet" href="{{ url_for ('static', filename='css/main.css') }}" >
+</head>
+<body>
+<center>
+    <!-- <header>
+        <nav>
+            <ul class="nav">
+                <li> <a href="/templates/home.html">HOME</a></li>
+                <li> <a href="/templates/main.html">EXPLORE</a></li>
+                <li> <a href="#"> ABOUT </a></li>
+            </ul>
+            <a  class="contact" href="#"> <button class="navnav"> CONTACT </button></a>
+        </nav>
+    </header> -->
+    
+  <div class="home">
+    <h2> Predict Star cluster in M31</h2>
+    <form action="{{ url_for('predict')}}" method="post">
+        <div class="eq">
+            <p>Equatorial coordinates</p>
+            <label for="ra">RA :</label>
+            <input type="text" name="ra" placeholder="e.g., 142 " required="required" />
+            <br>
+            <br>
+            <label for="dec">Dec :</label>
+            <input type="text" name="dec" placeholder="e.g., 15" required="required" /> 
+        </div>
+        <div class="photo">
+            <p> Photometry </p>
+            <label for="u">u :</label>
+            <input type="text" name="u" placeholder="e.g., 13.22" required="required" /><br><br>
+            <label for="b">b :</label>
+            <input type="text" name="b" placeholder="eg., 12.43" required="required" /><br><br>
+            <label for="v">v :</label>
+            <input type="text" name="v" placeholder="eg., 12.43" required="required" /><br><br>
+            <label for="r">r :</label>
+            <input type="text" name="r" placeholder="eg., 12.43" required="required" /><br><br>
+            <label for="i">i :</label>
+            <input type="text" name="i" placeholder="eg., 12.43" required="required" /><br><br>
+            <label for="j">j :</label>
+            <input type="text" name="j" placeholder="eg., 12.43" required="required" /><br><br>
+            <label for="h">h :</label>
+            <input type="text" name="h" placeholder="eg., 12.43" required="required" /><br><br>
+            <label for="k">k :</label>
+            <input type="text" name="k" placeholder="eg., 12.43" required="required" /><br><br>
+        </div>
+        <div class="Radial">
+            <p>Radial Velocity</p>
+            <label for="Vr">Vr :</label>
+            <input type="text" name="Vr" placeholder="eg., -133" required = "required"><br><br>
+        </div>    
+        <!-- <p>Galex Ultraviolet Photometry 
+            by Rey et al. (2007) and Kang et al. (2012)</p>
+        <label for="NUV">NUV :</label>
+        <input type="text" name="NUV" placeholder="eg., 12.43" required="required" /><br><br>
+        <label for="eNUV">eNUV :</label>
+        <input type="text" name="eNUV" placeholder="eg., 12.43" required="required" /><br><br>
+        <label for="FUV">FUV :</label>
+        <input type="text" name="FUV" placeholder="eg., 12.43" required="required" /><br><br>
+        <label for="eFUV">eFUV :</label>
+        <input type="text" name="eFUV" placeholder="eg., 12.43" required="required" /><br><br> -->
+        <div >
+            <button type="submit" class="button" > Predict </button>
+            <button type="reset" class="button" > Reset </button>
+        </div>
+    </form> 
+    </div>
+</center>
+</body>
+</html>

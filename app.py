@@ -65,9 +65,12 @@ def predict():
 
         fig.patch.set_facecolor('black')
 
-        # Set the background color of the axis
-        ax.set_facecolor('black')
-
+        ax.tick_params(axis='x',colors='white')
+        ax.tick_params(axis='y',colors='white')
+        ax.spines['left'].set_color('white')
+        ax.spines['bottom'].set_color('white')
+        ax.yaxis.label.set_color('white')
+        ax.xaxis.label.set_color('white')
 
         xlabel = ax.set_xlabel('Declination (deg)')
         xlabel.set_color('white')
