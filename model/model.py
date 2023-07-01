@@ -3,14 +3,9 @@ import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
 import pickle
-
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.model_selection import train_test_split
-from sklearn.ensemble import RandomForestClassifier
 from sklearn.ensemble import GradientBoostingClassifier
-from sklearn import metrics
-from sklearn.metrics import accuracy_score
-from sklearn.model_selection import GridSearchCV
 
 data = pd.read_csv('m31.csv')
 

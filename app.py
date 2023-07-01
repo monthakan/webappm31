@@ -58,8 +58,9 @@ def predict():
 
 
 
-        fig, ax = plt.subplots(figsize=(6, 6))
-        ax.imshow(image)
+        fig, ax = plt.subplots(figsize=(8, 6))
+        height, width, _ = image.shape
+        ax.imshow(image, origin='upper', extent=[0, width, 0, height]) 
 
         ax.scatter(sky_coords.dec.deg, sky_coords.ra.deg, marker='o', color='red')
 
@@ -71,16 +72,19 @@ def predict():
         ax.spines['bottom'].set_color('white')
         ax.yaxis.label.set_color('white')
         ax.xaxis.label.set_color('white')
+        
 
-        xlabel = ax.set_xlabel('Declination (deg)')
+        
+        xlabel = ax.set_xlabel('Right Ascension (deg)')
         xlabel.set_color('white')
         xlabel
-        ylabel = ax.set_ylabel('Right Ascension (deg)')
+        ylabel = ax.set_ylabel('Declination (deg)')
         ylabel.set_color('white')
         ylabel
         title = ax.set_title('Sky Coordinate')
         title.set_color('white')
-        title
+        title  
+        ax.set_ylim([0,1800])
 
     
         # Save the plot to a buffer
